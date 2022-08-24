@@ -28,6 +28,8 @@ secret:
       match: 5a30c19461a9eb90870f4f28bc5e8e4e986f8baa2bd4dec2a6186f9d0fca0096
     - name: second dummy secret
       match: 3a1c07c2a35f1bf99d6bba6a119030d07488a48f4c3e78add0cbb0f9c872c601
+    - name: third dummy secret
+      match: AKIG24ARNW7D5SWG4NMG
 
   show-secrets: false # default: false
 
