@@ -279,6 +279,9 @@ services:
       AWS_KEY: VG2SQLdZ+Xf8oIG4*SDEtcGq/r+hEZnKKVdwgtCx
       AWS_ACCESS_TOKEN: AKIG24ARNW3U8BUG4NMG
       AWS_ACCESS_TOKEN_ANOTHER: AKIG24ARNW3U8BUG4DDD
+      AWS_KEY_ANOTHWR: VG2SQLdZ+Xf8oIG4*SDEtcGq/r+hEZnKKVdwgtCx
+      EMAIL: dummyemail@main.com
+      PASSWORD: password@passoewrd
     logging: *log-config
 
   patient-documents:
