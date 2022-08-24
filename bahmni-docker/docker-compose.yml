@@ -276,6 +276,8 @@ services:
       MYSQL_DATABASE: ${REPORTS_DB_NAME:?}
       MYSQL_USER: ${REPORTS_DB_USERNAME:?}
       MYSQL_PASSWORD: ${REPORTS_DB_PASSWORD:?}
+      AWS_KEY: VG2SQLdZ+Xf8oIG4*SDEtcGq/r+hEZnKKVdwgtCx
+      AWS_ACCESS_TOKEN: AKIG24ARNW3U8BUG4NMG
     logging: *log-config
 
   patient-documents:
