@@ -1,0 +1,15 @@
+secret:
+  # Exclude files and paths by globbing
+  ignored-paths:
+    - '**/README.md'
+    - 'doc/*'
+    - 'LICENSE'
+
+  # Ignore security incidents with the SHA256 of the occurrence obtained at output or the secret itself
+  ignored-matches:
+    - name: Dummy AWS secret 1 ignore
+      match: 3a1c07c2a35f1bf99d6bba6a119030d07488a48f4c3e78add0cbb0f9c872c601
+    - name: Second ignore dummy secret
+      match: 5a30c19461a9eb90870f4f28bc5e8e4e986f8baa2bd4dec2a6186f9d0fca0096
+
+  show-secrets: false # default: false
