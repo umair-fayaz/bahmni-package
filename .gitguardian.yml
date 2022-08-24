@@ -1,3 +1,20 @@
+# Required, otherwise ggshield considers the file to use the deprecated v1 format
+version: 2
+
+# Set to true if the desired exit code for the CLI is always 0, otherwise the
+# exit code will be 1 if incidents are found.
+exit-zero: false # default: false
+
+verbose: false # default: false
+
+instance: https://api.gitguardian.com # default: https://api.gitguardian.com
+
+# Maximum commits to scan in a hook.
+max-commits-for-hook: 50 # default: 50
+
+# Accept self-signed certificates for the API.
+allow-self-signed: false # default: false
+
 secret:
   # Exclude files and paths by globbing
   ignored-paths:
@@ -7,9 +24,13 @@ secret:
 
   # Ignore security incidents with the SHA256 of the occurrence obtained at output or the secret itself
   ignored-matches:
-    - name: Dummy AWS secret 1 ignore
-      match: 3a1c07c2a35f1bf99d6bba6a119030d07488a48f4c3e78add0cbb0f9c872c601
-    - name: Second ignore dummy secret
+    - name: first dummy secret
       match: 5a30c19461a9eb90870f4f28bc5e8e4e986f8baa2bd4dec2a6186f9d0fca0096
+    - name: second dummy secret
+      match: 3a1c07c2a35f1bf99d6bba6a119030d07488a48f4c3e78add0cbb0f9c872c601
 
   show-secrets: false # default: false
+
+  # Detectors to ignore.
+  ignored-detectors: # default: []
+    - Generic Password
