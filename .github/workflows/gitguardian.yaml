@@ -20,8 +20,8 @@ jobs:
           GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
   trivy-scanning:
-    name: Deep Spurce Scan
-    runs-on: ubuntu-latest
+    name: Trivy
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
