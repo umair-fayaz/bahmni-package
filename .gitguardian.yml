@@ -30,6 +30,8 @@ secret:
       match: 3a1c07c2a35f1bf99d6bba6a119030d07488a48f4c3e78add0cbb0f9c872c601
     - name: third dummy secret
       match: AKIG24ARNW7D5SWG4NMG
+    - name: AWS token
+      match: 5c9d1f13ab88f710ae1bff9889556df4b935584e019b43277dbd03d94121f76e
 
   show-secrets: false # default: false
 
